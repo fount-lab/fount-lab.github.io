@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none" role="img" aria-label="Fount Lab">
+  <path d="M22 8 Q14 8 14 18 L14 24 Q14 28 10 28 Q14 28 14 32 L14 38 Q14 48 22 48" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M34 8 Q42 8 42 18 L42 24 Q42 28 46 28 Q42 28 42 32 L42 38 Q42 48 34 48" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+  <circle cx="28" cy="28" r="2.4" fill="currentColor"></circle>
+</svg>
