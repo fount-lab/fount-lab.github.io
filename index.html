@@ -55,10 +55,28 @@
       main { padding: 48px 20px 72px; }
     }
     .wordmark {
-      font-size: 15px;
-      font-weight: 600;
-      letter-spacing: 0.01em;
       margin: 0 0 56px;
+      line-height: 0;
+    }
+    .wordmark img {
+      display: block;
+      height: 24px;
+      width: auto;
+    }
+    @media (prefers-color-scheme: dark) {
+      .wordmark img { filter: invert(1); }
+    }
+    .line-title {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .line-title img {
+      display: block;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      flex-shrink: 0;
     }
     h1 {
       font-size: 28px;
@@ -156,7 +174,9 @@
 </head>
 <body>
   <main>
-    <p class="wordmark">Fount Lab</p>
+    <p class="wordmark">
+      <img src="brand/fountlab-wordmark.svg" alt="Fount Lab">
+    </p>
 
     <h1>AI를 책임있게 다룹니다</h1>
     <p class="tagline-en">We handle AI responsibly.</p>
@@ -170,7 +190,10 @@
       <h2 id="lines">운영 중인 사업</h2>
       <ul class="lines">
         <li>
-          <strong>Preflight</strong>
+          <span class="line-title">
+            <img src="brand/preflight-icon.svg" alt="">
+            <strong>Preflight</strong>
+          </span>
           <span class="desc">AI로 만든 앱의 배포 전 보안 프리플라이트.</span>
           <span class="meta">바로가기: <a href="https://launchpreflight.com" rel="noopener">launchpreflight.com</a></span>
         </li>
