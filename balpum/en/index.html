@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Balpum Support</title>
+<style>
+  :root {
+    --bg: #FAFAF8; --surface: #FFFFFF; --text: #1A1A1A; --muted: #6B6B6B;
+    --hairline: #E6E6E1; --accent: #34A853; --accent-ink: #14331F; --tint: #E8F5EA;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0B0C10; --surface: #171A20; --text: #F2F3F5; --muted: #9A9CA3;
+      --hairline: #26272C; --accent: #4CAF6A; --accent-ink: #BFE6C8; --tint: #12271A;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+                 "Malgun Gothic", system-ui, sans-serif;
+    line-height: 1.75; font-size: 16px;
+    overflow-wrap: anywhere;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 20px 96px; }
+  header { border-bottom: 1px solid var(--hairline); padding-bottom: 24px; margin-bottom: 8px; }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand svg { width: 44px; height: 44px; flex: none; }
+  .brand-name { font-size: 22px; font-weight: 700; letter-spacing: -0.01em; }
+  h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; margin: 20px 0 6px; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+  h2 {
+    font-size: 19px; font-weight: 700; margin: 44px 0 12px;
+    padding-top: 20px; border-top: 1px solid var(--hairline);
+  }
+  h2:first-of-type { border-top: 0; }
+  h3 { font-size: 16px; font-weight: 700; margin: 24px 0 8px; }
+  p { margin: 12px 0; }
+  ul { margin: 12px 0; padding-left: 20px; }
+  li { margin: 6px 0; }
+  strong { font-weight: 700; }
+  .lead {
+    background: var(--surface); border: 1px solid var(--hairline); border-radius: 14px;
+    padding: 20px 22px; margin: 24px 0 8px;
+  }
+  .lead p:first-child { margin-top: 0; }
+  .lead p:last-child { margin-bottom: 0; }
+  .note {
+    border-left: 3px solid var(--accent); background: var(--tint);
+    color: var(--accent-ink); padding: 12px 16px; border-radius: 0 10px 10px 0;
+    margin: 16px 0; font-size: 15px;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+  th { font-weight: 700; color: var(--muted); font-size: 13px; letter-spacing: 0.02em; }
+  .scroll { overflow-x: auto; }
+  footer {
+    margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--hairline);
+    color: var(--muted); font-size: 14px;
+  }
+  a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+  .lang { float: right; font-size: 14px; color: var(--muted); margin-top: 6px; }
+  .q { font-weight: 700; margin: 22px 0 4px; }
+  .q + p { margin-top: 0; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 0; }
+  .links a {
+    text-decoration: none; border: 1px solid var(--hairline); border-radius: 999px;
+    padding: 7px 15px; font-size: 15px; background: var(--surface);
+  }
+
+  .lang { float: right; font-size: 14px; color: var(--muted); margin-top: 6px; }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <a class="lang" href="../" lang="ko" hreflang="ko">한국어</a>
+  <div class="brand">
+    <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+      <path d="M22 8 Q14 8 14 18 L14 24 Q14 28 10 28 Q14 28 14 32 L14 38 Q14 48 22 48" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M34 8 Q42 8 42 18 L42 24 Q42 28 46 28 Q42 28 42 32 L42 38 Q42 48 34 48" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+      <circle cx="28" cy="28" r="2.4" fill="currentColor"></circle>
+    </svg>
+    <span class="brand-name">Balpum</span>
+  </div>
+  <h1>Support</h1>
+  <p class="meta">Walk to earn screen time</p>
+</header>
+
+<div class="lead">
+  <p><strong>Balpum turns your steps into screen time.</strong> By default <strong>100 steps is 1 minute</strong>, on top of <strong>15 free minutes every day</strong>. Minutes you don't spend carry over to the next day, up to 60.</p>
+  <p>When your balance hits 0, a lock screen covers the apps you picked. It never truly blocks you — <strong>&ldquo;Open anyway&rdquo; is always there</strong> — but that day gets a smudge on your record.</p>
+</div>
+
+<h2>Frequently asked questions</h2>
+
+<p class="q">My steps aren't showing up</p>
+<p>Balpum reads steps from the <strong>Apple Health app</strong>. Check that step reading is enabled under iOS <em>Settings &rsaquo; Privacy &amp; Security &rsaquo; Health &rsaquo; Balpum</em>. Syncing happens when you open the app, and <strong>pulling down</strong> on the home screen syncs again right away.</p>
+
+<p class="q">The lock won't turn on</p>
+<p>Locking needs separate <strong>Screen Time access</strong>. You can request it under <em>Lock settings</em> on the home screen. This access is used only to manage your own device; it never supervises anyone else's.</p>
+
+<p class="q">Why can't I see app names in the lock list?</p>
+<p>iOS hands your selection to the app <strong>in a form it cannot interpret</strong>. So Balpum cannot know which apps you picked, and the screen shows only a count. This is a constraint iOS enforces.</p>
+
+<p class="q">What happens when I tap &ldquo;Open anyway&rdquo;?</p>
+<p>It asks once more, then opens. That day gets a smudge (a brown dot), it counts in your weekly report, and <strong>the app locks again after 15 minutes.</strong></p>
+
+<p class="q">If I change the rates, what happens to past days?</p>
+<p><strong>They are recalculated too.</strong> Your balance is never a stored number — it is computed from your step history every time.</p>
+
+<p class="q">What does the Apple Watch add?</p>
+<p>Start a session on your Watch and walking at <strong>Zone 2 heart rate (110 bpm by default)</strong> earns 1.5×. Your wrist is tapped every 100 steps, and the session is saved as a workout so it fills your Activity rings.</p>
+
+<p class="q">I don't see the Weekly Nag</p>
+<p>It stays hidden until you have some history. The single sentence at the top of the card appears only on devices that support <strong>Apple Intelligence</strong>; the summary below it is identical on every device.</p>
+
+<p class="q">Will my history move to a new device?</p>
+<p><strong>No.</strong> Balpum has no account, no server, and no backup — your history lives only on the device. Deleting the app deletes it for good. Workouts saved to the Health app remain there.</p>
+
+<h2>Requirements</h2>
+<ul>
+  <li>iPhone — iOS 18 or later</li>
+  <li>Apple Watch — watchOS 11 or later (optional)</li>
+  <li>The one-line comment in Weekly Nag requires an Apple Intelligence capable device</li>
+</ul>
+
+<h2>Contact</h2>
+<p>Bug reports, feature ideas, anything at all — write to <a href="mailto:contact@fountlab.co.kr">contact@fountlab.co.kr</a>. We reply within two to three business days.</p>
+<div class="note">We cannot see what's on your device. Telling us your device model, iOS version, and which screen it happened on makes it far quicker to track down.</div>
+
+<div class="links">
+  <a href="../privacy/en/">Privacy Policy</a>
+  <a href="https://fountlab.co.kr/">Fount Lab</a>
+</div>
+
+<footer>
+  Fount Lab · Balpum
+</footer>
+
+</main>
+</body>
+</html>

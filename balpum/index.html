@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>발품 지원</title>
+<style>
+  :root {
+    --bg: #FAFAF8; --surface: #FFFFFF; --text: #1A1A1A; --muted: #6B6B6B;
+    --hairline: #E6E6E1; --accent: #34A853; --accent-ink: #14331F; --tint: #E8F5EA;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0B0C10; --surface: #171A20; --text: #F2F3F5; --muted: #9A9CA3;
+      --hairline: #26272C; --accent: #4CAF6A; --accent-ink: #BFE6C8; --tint: #12271A;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+                 "Malgun Gothic", system-ui, sans-serif;
+    line-height: 1.75; font-size: 16px;
+    word-break: keep-all; overflow-wrap: anywhere;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 20px 96px; }
+  header { border-bottom: 1px solid var(--hairline); padding-bottom: 24px; margin-bottom: 8px; }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand svg { width: 44px; height: 44px; flex: none; }
+  .brand-name { font-size: 22px; font-weight: 700; letter-spacing: -0.01em; }
+  h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; margin: 20px 0 6px; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+  h2 {
+    font-size: 19px; font-weight: 700; margin: 44px 0 12px;
+    padding-top: 20px; border-top: 1px solid var(--hairline);
+  }
+  h2:first-of-type { border-top: 0; }
+  h3 { font-size: 16px; font-weight: 700; margin: 24px 0 8px; }
+  p { margin: 12px 0; }
+  ul { margin: 12px 0; padding-left: 20px; }
+  li { margin: 6px 0; }
+  strong { font-weight: 700; }
+  .lead {
+    background: var(--surface); border: 1px solid var(--hairline); border-radius: 14px;
+    padding: 20px 22px; margin: 24px 0 8px;
+  }
+  .lead p:first-child { margin-top: 0; }
+  .lead p:last-child { margin-bottom: 0; }
+  .note {
+    border-left: 3px solid var(--accent); background: var(--tint);
+    color: var(--accent-ink); padding: 12px 16px; border-radius: 0 10px 10px 0;
+    margin: 16px 0; font-size: 15px;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+  th { font-weight: 700; color: var(--muted); font-size: 13px; letter-spacing: 0.02em; }
+  .scroll { overflow-x: auto; }
+  footer {
+    margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--hairline);
+    color: var(--muted); font-size: 14px;
+  }
+  a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+  .lang { float: right; font-size: 14px; color: var(--muted); margin-top: 6px; }
+  .q { font-weight: 700; margin: 22px 0 4px; }
+  .q + p { margin-top: 0; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 0; }
+  .links a {
+    text-decoration: none; border: 1px solid var(--hairline); border-radius: 999px;
+    padding: 7px 15px; font-size: 15px; background: var(--surface);
+  }
+
+  .lang { float: right; font-size: 14px; color: var(--muted); margin-top: 6px; }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <a class="lang" href="en/" lang="en" hreflang="en">English</a>
+  <div class="brand">
+    <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+      <path d="M22 8 Q14 8 14 18 L14 24 Q14 28 10 28 Q14 28 14 32 L14 38 Q14 48 22 48" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M34 8 Q42 8 42 18 L42 24 Q42 28 46 28 Q42 28 42 32 L42 38 Q42 48 34 48" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+      <circle cx="28" cy="28" r="2.4" fill="currentColor"></circle>
+    </svg>
+    <span class="brand-name">발품</span>
+  </div>
+  <h1>지원</h1>
+  <p class="meta">걸어서 스크린타임을 버는 앱</p>
+</header>
+
+<div class="lead">
+  <p><strong>발품은 걸음을 스크린타임으로 바꿉니다.</strong> 기본 설정에서 <strong>100걸음이 1분</strong>이고, 여기에 <strong>매일 무료 15분</strong>이 얹힙니다. 쓰지 않고 남긴 시간은 다음 날로 최대 60분까지 넘어갑니다.</p>
+  <p>잔액이 0분이 되면 직접 고른 앱 위에 잠금 화면이 덮입니다. 다만 막지는 않습니다 — <strong>&ldquo;그냥 열기&rdquo;는 항상 있고</strong>, 대신 그날 기록에 얼룩이 남습니다.</p>
+</div>
+
+<h2>자주 묻는 질문</h2>
+
+<p class="q">걸음이 올라오지 않아요</p>
+<p>발품은 <strong>Apple 건강 앱</strong>에서 걸음을 읽습니다. iOS <em>설정 &rsaquo; 개인정보 보호 및 보안 &rsaquo; 건강 &rsaquo; 발품</em>에서 걸음 수 읽기가 켜져 있는지 확인해 주세요. 동기화는 앱을 열 때 일어나고, 첫 화면을 <strong>아래로 당기면</strong> 바로 다시 맞춥니다.</p>
+
+<p class="q">잠금이 켜지지 않아요</p>
+<p>잠금에는 <strong>스크린 타임 권한</strong>이 따로 필요합니다. 첫 화면의 <em>잠금 설정</em>에서 요청할 수 있습니다. 이 권한은 본인 기기를 스스로 관리하는 용도로만 쓰이며, 다른 사람의 기기를 감독하지 않습니다.</p>
+
+<p class="q">잠글 앱 목록에 이름이 안 보여요</p>
+<p>iOS는 고른 앱을 <strong>해석할 수 없는 형태</strong>로만 앱에 넘겨줍니다. 그래서 발품은 어떤 앱을 고르셨는지 알 수 없고, 화면에도 개수만 표시됩니다. 이는 iOS가 강제하는 제약입니다.</p>
+
+<p class="q">&ldquo;그냥 열기&rdquo;를 누르면 어떻게 되나요</p>
+<p>한 번 더 확인한 뒤 열립니다. 그날 기록에 얼룩(갈색 점)이 남고 주간 리포트에 집계되며, <strong>15분 뒤 다시 잠깁니다.</strong></p>
+
+<p class="q">환율을 바꾸면 예전 기록은 어떻게 되나요</p>
+<p><strong>과거 기록에도 소급 적용됩니다.</strong> 잔액은 저장된 값이 아니라 걸음 기록에서 매번 다시 계산하기 때문입니다.</p>
+
+<p class="q">Apple Watch는 뭐가 다른가요</p>
+<p>워치에서 세션을 시작하면 <strong>존2 심박(기본 110bpm 이상)</strong>으로 걷는 동안 적립이 1.5배가 됩니다. 100걸음마다 손목에 톡 하고 알려주고, 세션은 운동으로 기록되어 활동 링에도 반영됩니다.</p>
+
+<p class="q">주간 잔소리가 안 보여요</p>
+<p>기록이 아직 없으면 표시되지 않습니다. 카드 맨 위의 한 문장은 <strong>Apple Intelligence</strong>를 쓸 수 있는 기기에서만 붙고, 나머지 정리된 기록은 모든 기기에서 똑같이 나옵니다.</p>
+
+<p class="q">기기를 바꾸면 기록이 옮겨지나요</p>
+<p><strong>아니요.</strong> 발품에는 계정도 서버도 백업도 없어서 기록이 기기 안에만 있습니다. 앱을 지우면 함께 사라지고 되돌릴 수 없습니다. 건강 앱에 저장된 운동 기록은 남습니다.</p>
+
+<h2>필요한 환경</h2>
+<ul>
+  <li>iPhone — iOS 18 이상</li>
+  <li>Apple Watch — watchOS 11 이상 (선택)</li>
+  <li>주간 잔소리의 한 문장은 Apple Intelligence 지원 기기에서만</li>
+</ul>
+
+<h2>문의</h2>
+<p>버그 제보, 기능 제안, 그 밖에 무엇이든 <a href="mailto:contact@fountlab.co.kr">contact@fountlab.co.kr</a>로 보내주세요. 영업일 기준 2~3일 안에 답장드립니다.</p>
+<div class="note">기기 안의 기록은 저희가 볼 수 없습니다. 문제 상황을 알려주실 때 기기 모델과 iOS 버전, 어떤 화면에서 일어났는지를 함께 적어주시면 훨씬 빠르게 찾을 수 있습니다.</div>
+
+<div class="links">
+  <a href="privacy/">개인정보처리방침</a>
+  <a href="https://fountlab.co.kr/">Fount Lab</a>
+</div>
+
+<footer>
+  Fount Lab · 발품
+</footer>
+
+</main>
+</body>
+</html>
