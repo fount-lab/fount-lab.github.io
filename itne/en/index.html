@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Itne Support</title>
+<style>
+  :root {
+    --bg: #FAFAF8; --surface: #FFFFFF; --text: #1A1A1A; --muted: #6B6B6B;
+    --hairline: #E6E6E1; --accent: #FF9F0A; --accent-ink: #3D2600; --tint: #FFF3E0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0B0C10; --surface: #171A20; --text: #F2F3F5; --muted: #9A9CA3;
+      --hairline: #26272C; --accent: #FF9F0A; --accent-ink: #FFD59B; --tint: #2A1F0E;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+                 "Malgun Gothic", system-ui, sans-serif;
+    line-height: 1.75; font-size: 16px;
+    word-break: keep-all; overflow-wrap: anywhere;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 20px 96px; }
+  header { border-bottom: 1px solid var(--hairline); padding-bottom: 24px; margin-bottom: 8px; }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand svg { width: 44px; height: 44px; flex: none; }
+  .brand-name { font-size: 22px; font-weight: 700; letter-spacing: -0.01em; }
+  h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; margin: 20px 0 6px; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+  h2 {
+    font-size: 19px; font-weight: 700; margin: 44px 0 12px;
+    padding-top: 20px; border-top: 1px solid var(--hairline);
+  }
+  h2:first-of-type { border-top: 0; }
+  h3 { font-size: 16px; font-weight: 700; margin: 24px 0 8px; }
+  p { margin: 12px 0; }
+  ul { margin: 12px 0; padding-left: 20px; }
+  li { margin: 6px 0; }
+  strong { font-weight: 700; }
+  .lead {
+    background: var(--surface); border: 1px solid var(--hairline); border-radius: 14px;
+    padding: 20px 22px; margin: 24px 0 8px;
+  }
+  .lead p:first-child { margin-top: 0; }
+  .lead p:last-child { margin-bottom: 0; }
+  .note {
+    border-left: 3px solid var(--accent); background: var(--tint);
+    color: var(--accent-ink); padding: 12px 16px; border-radius: 0 10px 10px 0;
+    margin: 16px 0; font-size: 15px;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+  th { font-weight: 700; color: var(--muted); font-size: 13px; letter-spacing: 0.02em; }
+  .scroll { overflow-x: auto; }
+  footer {
+    margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--hairline);
+    color: var(--muted); font-size: 14px;
+  }
+  a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+  .lang { float: right; font-size: 14px; color: var(--muted); margin-top: 6px; }
+  .q { font-weight: 700; margin: 22px 0 4px; }
+  .q + p { margin-top: 0; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 0; }
+  .links a {
+    text-decoration: none; border: 1px solid var(--hairline); border-radius: 999px;
+    padding: 7px 15px; font-size: 15px; background: var(--surface);
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <a class="lang" href="../" lang="ko" hreflang="ko">한국어</a>
+  <div class="brand">
+    <svg viewBox="30.65 30.65 46.70 46.70" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M36.488,30.65 h9.174 a5.838000000000001,5.838000000000001 0 0 1 5.838000000000001,5.838000000000001 v9.174 a5.838000000000001,5.838000000000001 0 0 1 -5.838000000000001,5.838000000000001 h-9.174 a5.838000000000001,5.838000000000001 0 0 1 -5.838000000000001,-5.838000000000001 v-9.174 a5.838000000000001,5.838000000000001 0 0 1 5.838000000000001,-5.838000000000001 z" fill="#FF9F0A"/>
+      <path d="M62.338,30.65 h9.174 a5.838000000000001,5.838000000000001 0 0 1 5.838000000000001,5.838000000000001 v9.174 a5.838000000000001,5.838000000000001 0 0 1 -5.838000000000001,5.838000000000001 h-9.174 a5.838000000000001,5.838000000000001 0 0 1 -5.838000000000001,-5.838000000000001 v-9.174 a5.838000000000001,5.838000000000001 0 0 1 5.838000000000001,-5.838000000000001 z" fill="#2E3033"/>
+      <path d="M36.488,56.5 h9.174 a5.838000000000001,5.838000000000001 0 0 1 5.838000000000001,5.838000000000001 v9.174 a5.838000000000001,5.838000000000001 0 0 1 -5.838000000000001,5.838000000000001 h-9.174 a5.838000000000001,5.838000000000001 0 0 1 -5.838000000000001,-5.838000000000001 v-9.174 a5.838000000000001,5.838000000000001 0 0 1 5.838000000000001,-5.838000000000001 z" fill="#2E3033"/>
+      <path d="M61.83,56.50 L65.83,56.50" stroke="#6B6B6B" stroke-width="2.4" stroke-linecap="butt" fill="none"/>
+      <path d="M68.03,56.50 L72.03,56.50" stroke="#6B6B6B" stroke-width="2.4" stroke-linecap="butt" fill="none"/>
+      <path d="M77.35,61.83 L77.35,65.83" stroke="#6B6B6B" stroke-width="2.4" stroke-linecap="butt" fill="none"/>
+      <path d="M77.35,68.03 L77.35,72.03" stroke="#6B6B6B" stroke-width="2.4" stroke-linecap="butt" fill="none"/>
+      <path d="M72.03,77.35 L68.03,77.35" stroke="#6B6B6B" stroke-width="2.4" stroke-linecap="butt" fill="none"/>
+      <path d="M65.83,77.35 L61.83,77.35" stroke="#6B6B6B" stroke-width="2.4" stroke-linecap="butt" fill="none"/>
+      <path d="M56.50,72.03 L56.50,68.03" stroke="#6B6B6B" stroke-width="2.4" stroke-linecap="butt" fill="none"/>
+      <path d="M56.50,65.83 L56.50,61.83" stroke="#6B6B6B" stroke-width="2.4" stroke-linecap="butt" fill="none"/>
+    </svg>
+    <span class="brand-name">Itne</span>
+  </div>
+  <h1>Support</h1>
+  <p class="meta">An app that remembers what you already have at home</p>
+</header>
+
+<div class="lead">
+  <p>Photograph a receipt once and the items are read out of it. Drag them onto places like the fridge or the pantry and they are filed. Add an expiry date and Itne tells you before the food turns.</p>
+  <p>There is no sign-in. Your item list lives on your device.</p>
+  <div class="note"><strong>Itne is Korean-only.</strong> The interface is in Korean and the receipt reader is tuned for Korean receipts.</div>
+</div>
+
+<h2>Frequently asked questions</h2>
+
+<p class="q">The receipt isn&rsquo;t read correctly</p>
+<p>Flatten the receipt, use good light, and make sure the <strong>whole receipt fits in the frame</strong>. Creases and shadows smear the characters. Thermal-paper receipts fade over time, so they read best on the day you get them.</p>
+
+<p class="q">Some items came out wrong</p>
+<p>You can fix them on the review screen <strong>before saving</strong> — name, quantity, place and expiry date are all editable there, and you can untick any line you don&rsquo;t want. After saving, tap an item to change it at any time.</p>
+
+<p class="q">Scanning doesn&rsquo;t work</p>
+<ul>
+  <li><strong>Internet connection</strong> — only reading a receipt needs one. Everything else works offline.</li>
+  <li><strong>Monthly free scans</strong> — if you have used all 30 this month, wait for the reset or use your own API key (below).</li>
+  <li><strong>Temporary server trouble</strong> — if you see &ldquo;the scanning server isn&rsquo;t responding&rdquo;, try again shortly. The photo you took stays in the <strong>pending</strong> queue so you can pick it up later.</li>
+</ul>
+
+<p class="q">How many scans are free?</p>
+<p><strong>30 receipt scans per month</strong>, refilled on the 1st of each month. Adding items by hand, organising them and receiving expiry reminders are unlimited.</p>
+
+<p class="q">I&rsquo;m not getting notifications</p>
+<p>Reminders are only sent for items that <strong>have an expiry date</strong>. How many days ahead and at what time is set under <strong>Settings &rarr; expiry reminders</strong> in the app.</p>
+<p>If they still don&rsquo;t arrive, check that notifications are allowed for Itne — iOS: Settings &rarr; Notifications &rarr; Itne. Android: Settings &rarr; Apps &rarr; Itne &rarr; Notifications.</p>
+
+<p class="q">My devices show different lists</p>
+<p><strong>iPhone and iPad</strong> sync through iCloud between your own devices. Check that both are signed in to the same Apple Account with iCloud on and have an internet connection. The first sync takes a little while.</p>
+<p><strong>Android does not sync.</strong> Records stay on that device, and Android and iPhone are never matched up with each other.</p>
+
+<p class="q">How do I move an item to another place?</p>
+<p>Press and hold the item and <strong>drag it onto a place tile</strong>. To move several at once, tap <strong>Select</strong> above the unsorted list, choose them, then move them together. You can also open an item and pick its place there.</p>
+
+<p class="q">I can&rsquo;t remember what it was called</p>
+<p>Korean initial consonants are enough — typing <strong>&ldquo;ㄱㅈㅈ&rdquo;</strong> finds 건전지 (batteries). Words you wrote in the memo field are searched too.</p>
+
+<p class="q">What is different on iPad?</p>
+<p>On iPad the Items tab opens as a <strong>sorting station</strong>: things that have no place yet on the left, place boxes on the right, which makes dragging much easier.</p>
+
+<p class="q">Can I use my own API key?</p>
+<p>Yes — <strong>Settings &rarr; receipt parsing &rarr; API key &amp; model</strong> switches from the Itne server to a key you issued yourself. The monthly limit of 30 then does not apply and the cost is billed to that account. The key is stored encrypted on your device and is never sent to the Itne server.</p>
+
+<p class="q">Will my records move to a new device?</p>
+<p><strong>iPhone and iPad</strong> — yes, through iCloud sync and backup, as long as you use the same Apple Account.</p>
+<p><strong>Android</strong> — <strong>no.</strong> There is no backup, so deleting the app or changing device loses the records for good.</p>
+
+<h2>Requirements</h2>
+<ul>
+  <li>iPhone and iPad — iOS 26 or later</li>
+  <li>Android — Android 8.0 or later</li>
+  <li>Korean only, interface and receipts alike</li>
+</ul>
+
+<h2>Contact</h2>
+<p>Bug reports, feature requests, anything at all — write to <a href="mailto:contact@fountlab.co.kr">contact@fountlab.co.kr</a>. We reply within two or three business days. Korean and English are both fine.</p>
+<div class="note">Your item list is on your device, so we cannot see it. Telling us <strong>your device model, OS version and which screen it happened on</strong> makes it far quicker to track down.</div>
+
+<div class="links">
+  <a href="../privacy/">Privacy Policy</a>
+  <a href="https://fountlab.co.kr/">Fount Lab</a>
+</div>
+
+<footer>
+  Fount Lab · Itne
+</footer>
+
+</main>
+</body>
+</html>
