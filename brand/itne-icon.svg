@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" role="img" aria-label="Itne">
+  <rect width="108" height="108" fill="#F4F6F9"/>
+  <g transform="translate(54 54) scale(1.32) translate(-54 -54)">
+    <rect x="30.65" y="30.65" width="20.85" height="20.85" rx="5.838" fill="#1B2230"/>
+    <rect x="56.50" y="30.65" width="20.85" height="20.85" rx="5.838" fill="#1B2230"/>
+    <rect x="30.65" y="56.50" width="20.85" height="20.85" rx="5.838" fill="#1B2230"/>
+    <circle cx="66.925" cy="66.925" r="9.425" fill="none" stroke="#FF9F0A" stroke-width="2.4"
+            stroke-dasharray="3.3 2.29" stroke-linecap="butt"/>
+  </g>
+</svg>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Fount Lab</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Fount Lab은 AI를 책임있게 다룹니다. Preflight와 AI 교육·출강을 운영합니다.">
+  <meta name="description" content="Fount Lab은 AI를 책임있게 다룹니다. 발품·있네·Dégustation·Preflight를 만들고, AI 교육·출강을 운영합니다.">
   <meta name="color-scheme" content="light dark">
 
   <meta property="og:title" content="Fount Lab">
@@ -24,6 +24,7 @@
       --rule: #e5e5e5;
       --bg: #ffffff;
       --link: #111111;
+      --icon-ring: rgba(0, 0, 0, 0.08);
     }
     @media (prefers-color-scheme: dark) {
       :root {
@@ -32,6 +33,7 @@
         --rule: #2a2a2a;
         --bg: #0f0f0f;
         --link: #ededed;
+        --icon-ring: rgba(255, 255, 255, 0.12);
       }
     }
     * { box-sizing: border-box; }
@@ -132,6 +134,75 @@
       font-size: 14px;
       margin-top: 4px;
     }
+
+    .section-lead {
+      color: var(--muted);
+      font-size: 15px;
+      margin: -4px 0 22px;
+    }
+    ul.apps {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul.apps > li {
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      column-gap: 14px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    ul.apps > li:first-child { padding-top: 0; }
+    ul.apps > li:last-child { border-bottom: 0; padding-bottom: 0; }
+    ul.apps img {
+      display: block;
+      width: 36px;
+      height: 36px;
+      border-radius: 9px;
+      margin-top: 3px;
+      box-shadow: 0 0 0 1px var(--icon-ring);
+    }
+    .app-name {
+      margin: 0;
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    .app-name .latin {
+      font-weight: 400;
+      color: var(--muted);
+      font-size: 15px;
+      margin-left: 5px;
+      letter-spacing: 0;
+    }
+    .app-desc { margin: 4px 0 0; }
+    .app-meta {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .app-meta .soon::before {
+      content: "·";
+      margin: 0 6px;
+    }
+    .app-links {
+      margin: 4px 0 0;
+      font-size: 14px;
+    }
+    .app-links a + a::before {
+      content: "·";
+      margin: 0 8px;
+      color: var(--muted);
+      text-decoration: none;
+      display: inline-block;
+    }
+    @media (max-width: 420px) {
+      ul.apps > li {
+        grid-template-columns: 28px 1fr;
+        column-gap: 12px;
+      }
+      ul.apps img { width: 28px; height: 28px; border-radius: 7px; }
+    }
     a {
       color: var(--link);
       text-decoration: underline;
@@ -182,21 +253,64 @@
     <p class="tagline-en">We handle AI responsibly.</p>
 
     <div class="intro">
-      <p>Fount Lab은 AI를 사용하거나 도입하려는 사람들의 판단을 돕는 도구와 수업을 만듭니다.</p>
+      <p>Fount Lab은 직접 겪은 문제에서 출발한 앱을 만들고, AI를 처음 쓰는 사람들을 위한 수업을 엽니다.</p>
       <p>결과를 과장하지 않고, 판단에 필요한 정보를 충실히 전달합니다.</p>
     </div>
 
-    <section aria-labelledby="lines">
-      <h2 id="lines">운영 중인 사업</h2>
-      <ul class="lines">
+    <section aria-labelledby="apps">
+      <h2 id="apps">앱</h2>
+      <p class="section-lead">넷 다 직접 겪은 문제에서 시작했습니다.</p>
+      <ul class="apps">
         <li>
-          <span class="line-title">
-            <img src="brand/preflight-icon.svg" alt="">
-            <strong>Preflight</strong>
-          </span>
-          <span class="desc">AI로 만든 앱의 배포 전 보안 프리플라이트.</span>
-          <span class="meta">바로가기: <a href="https://launchpreflight.com" rel="noopener">launchpreflight.com</a></span>
+          <img src="brand/preflight-icon.svg" alt="">
+          <div>
+            <p class="app-name">Preflight</p>
+            <p class="app-desc">AI로 만든 앱을 배포하기 전에 거치는 보안 점검입니다. 보안 감사를 대체하지는 않습니다.</p>
+            <p class="app-meta">웹</p>
+            <p class="app-links">
+              <a href="https://launchpreflight.com" rel="noopener">launchpreflight.com</a>
+            </p>
+          </div>
         </li>
+        <li>
+          <img src="brand/balpum-icon.svg" alt="">
+          <div>
+            <p class="app-name">발품 <span class="latin">Balpum</span></p>
+            <p class="app-desc">걸음을 스크린 타임으로 바꿉니다. 100걸음이 1분이고, 잔액이 0이 되면 직접 고른 앱에 잠금이 덮입니다. 막지는 않고 그날 기록에 얼룩만 남깁니다.</p>
+            <p class="app-meta">iPhone · Apple Watch</p>
+            <p class="app-links">
+              <a href="https://apps.apple.com/kr/app/id6811479650" rel="noopener">App Store</a><a href="/balpum/">지원</a>
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="brand/itne-icon.svg" alt="">
+          <div>
+            <p class="app-name">있네 <span class="latin">Itne</span></p>
+            <p class="app-desc">영수증을 찍으면 품목이 정리됩니다. 그 물건을 집 안의 장소로 끌어다 놓으면, 무엇이 어디에 있는지 다시 헤매지 않습니다.</p>
+            <p class="app-meta">Android<span class="soon">iPhone 준비 중</span></p>
+            <p class="app-links">
+              <a href="https://play.google.com/store/apps/details?id=com.fountlab.itne" rel="noopener">Google Play</a><a href="/itne/privacy/">개인정보처리방침</a>
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="brand/degustation-icon.svg" alt="">
+          <div>
+            <p class="app-name">Dégustation <span class="latin">데귀스타시옹</span></p>
+            <p class="app-desc">커피를 내려주는 사람을 위한 시음 기록입니다. 함께 마신 사람은 QR만 찍으면 로그인 없이 평가를 남기고, 시음이 끝나면 카드 한 장이 남습니다.</p>
+            <p class="app-meta">Android<span class="soon">iPhone 준비 중</span></p>
+            <p class="app-links">
+              <a href="https://tastedlike.me" rel="noopener">tastedlike.me</a><a href="https://play.google.com/store/apps/details?id=me.tastedlike.owner" rel="noopener">Google Play</a>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="education">
+      <h2 id="education">교육</h2>
+      <ul class="lines">
         <li>
           <strong>AI 교육·출강</strong>
           <span class="desc">비전문가·시니어 대상 AI 활용 교육과 공공기관 위탁 출강을 진행하고 있습니다.</span>
