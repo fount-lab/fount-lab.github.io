@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://fountlab.co.kr/</loc>
+    <lastmod>2026-09-20</lastmod>
+  </url>
+  <url>
+    <loc>https://fountlab.co.kr/balpum/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fountlab.co.kr/balpum/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fountlab.co.kr/balpum/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fountlab.co.kr/balpum/"/>
+  </url>
+  <url>
+    <loc>https://fountlab.co.kr/balpum/en/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fountlab.co.kr/balpum/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fountlab.co.kr/balpum/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fountlab.co.kr/balpum/"/>
+  </url>
+  <url>
+    <loc>https://fountlab.co.kr/balpum/privacy/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fountlab.co.kr/balpum/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fountlab.co.kr/balpum/privacy/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fountlab.co.kr/balpum/privacy/"/>
+  </url>
+  <url>
+    <loc>https://fountlab.co.kr/balpum/privacy/en/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fountlab.co.kr/balpum/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fountlab.co.kr/balpum/privacy/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fountlab.co.kr/balpum/privacy/"/>
+  </url>
+  <url>
+    <loc>https://fountlab.co.kr/itne/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fountlab.co.kr/itne/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fountlab.co.kr/itne/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fountlab.co.kr/itne/"/>
+  </url>
+  <url>
+    <loc>https://fountlab.co.kr/itne/en/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fountlab.co.kr/itne/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fountlab.co.kr/itne/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fountlab.co.kr/itne/"/>
+  </url>
+  <url>
+    <loc>https://fountlab.co.kr/itne/privacy/</loc>
+    <lastmod>2026-09-18</lastmod>
+  </url>
+</urlset>
