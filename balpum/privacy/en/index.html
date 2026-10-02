@@ -90,11 +90,12 @@
 <div class="scroll">
 <table>
   <tr><th>Type</th><th>What it contains</th><th>Where it lives</th></tr>
-  <tr><td>Daily records</td><td>Date, step count, minutes earned, Watch session bonus, number of times the lock was bypassed</td><td>On-device database (the copy widgets draw from is in app group storage)</td></tr>
+  <tr><td>Daily records</td><td>Date, step count, minutes earned, Watch session and brisk-walk bonuses, number of times the lock was bypassed</td><td>On-device database (the copy widgets draw from is in app group storage)</td></tr>
   <tr><td>Start date</td><td>The day you first opened the app, used to compare steps before and after Balpum and to count your streak</td><td>App group storage</td></tr>
   <tr><td>Purchase status</td><td>Whether you bought Balpum Pro (yes/no)</td><td>App group storage</td></tr>
   <tr><td>Lock settings</td><td>Whether the lock is on, the set of apps you picked (opaque tokens), automatic deduction totals</td><td>App group storage</td></tr>
   <tr><td>Rate settings</td><td>Price of one minute, daily free minutes, carryover cap, Zone 2 heart rate threshold, streak threshold</td><td>On-device settings</td></tr>
+  <tr><td>Walk sessions</td><td>When you started “Walk just 5 minutes,” and the day’s brisk steps</td><td>On-device settings</td></tr>
   <tr><td>Weekly Nag</td><td>The single most recent generated sentence</td><td>On-device settings</td></tr>
 </table>
 </div>
@@ -109,7 +110,8 @@
   <tr><td>Apple Watch</td><td>Heart rate, step count, active energy</td><td>Workouts (indoor walking)</td><td>Zone 2 bonus during a session, filling your Activity rings</td></tr>
 </table>
 </div>
-<p>Health data <strong>never leaves your device.</strong> Balpum does not use health data for advertising or marketing, and never sells or shares it with anyone.</p>
+<p>Without an Apple Watch, “Walk just 5 minutes” uses your iPhone’s <strong>Motion &amp; Fitness</strong> (pedometer) data to count your steps and pace. It’s used only to add the brisk-walk bonus for time spent walking faster than 100 steps a minute.</p>
+<p>Health and motion data <strong>never leave your device.</strong> Balpum does not use this data for advertising or marketing, and never sells or shares it with anyone.</p>
 <p>You can withdraw access at any time in iOS <em>Settings &rsaquo; Privacy &amp; Security &rsaquo; Health</em>. Withdrawing stops step earning, but existing records remain.</p>
 
 <h2>3. Screen Time data</h2>
@@ -136,7 +138,7 @@
   <tr><th>Permission</th><th>Requested by</th><th>If you decline</th></tr>
   <tr><td>Health</td><td>iPhone, Apple Watch</td><td>Step earning and the Zone 2 bonus will not work</td></tr>
   <tr><td>Screen Time</td><td>iPhone</td><td>Only the lock will not work; earning continues as usual</td></tr>
-  <tr><td>Motion &amp; Fitness</td><td>Apple Watch</td><td>Live step haptics during a session will not work</td></tr>
+  <tr><td>Motion &amp; Fitness</td><td>iPhone, Apple Watch</td><td>iPhone: only the brisk-walk bonus in “Walk just 5 minutes” stops working; step earning continues. Apple Watch: live step haptics during a session will not work</td></tr>
 </table>
 </div>
 <p>Balpum <strong>does not request notification, location, contacts, camera, photo, or microphone access.</strong></p>
