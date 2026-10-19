@@ -77,22 +77,26 @@
     <span class="brand-name">Balpum</span>
   </div>
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective <!--EFFECTIVE_DATE-->September 13, 2026<!--/EFFECTIVE_DATE--> · Last updated September 13, 2026</p>
+  <p class="meta">Effective <!--EFFECTIVE_DATE-->September 13, 2026<!--/EFFECTIVE_DATE--> · Last updated October 19, 2026</p>
 </header>
 
 <div class="lead">
   <p><strong>Balpum is an app where walking earns screen time.</strong> Every step adds minutes to your balance, and when the balance runs out, a lock screen covers the apps you chose yourself.</p>
-  <p><strong>Balpum has no server and no feature that sends or receives anything over the internet.</strong> Your step, health, and screen-time records live only on your device. There is no account and no sign-in, and the developer cannot see your data.</p>
+  <p><strong>Balpum has no server.</strong> The only thing that uses the internet is buying and checking Balpum Pro, the paid upgrade, and the App Store handles that. Your step, health, and screen-time records live only on your device. There is no account and no sign-in, and the developer cannot see your data.</p>
 </div>
 
 <h2>1. Information stored only on your device</h2>
-<p>The information below never leaves your device. Deleting the app deletes it too.</p>
+<p>The information below never leaves your devices (your iPhone and the Apple Watch paired with it). Deleting the app deletes it too.</p>
 <div class="scroll">
 <table>
   <tr><th>Type</th><th>What it contains</th><th>Where it lives</th></tr>
-  <tr><td>Daily records</td><td>Date, step count, minutes earned, Watch session bonus, number of times the lock was bypassed</td><td>On-device database</td></tr>
+  <tr><td>Daily records</td><td>Date, step count, minutes earned, Watch session and brisk-walk bonuses, number of times the lock was bypassed, times you tapped &ldquo;I&rsquo;ll go walk&rdquo; or &ldquo;Open anyway&rdquo; on a locked app</td><td>On-device database (the copy widgets draw from is in app group storage)</td></tr>
+  <tr><td>Start date</td><td>The day you first opened the app, used to compare steps before and after Balpum and to count your streak</td><td>App group storage</td></tr>
+  <tr><td>Purchase status</td><td>Whether you bought Balpum Pro (yes/no)</td><td>App group storage</td></tr>
   <tr><td>Lock settings</td><td>Whether the lock is on, the set of apps you picked (opaque tokens), automatic deduction totals</td><td>App group storage</td></tr>
-  <tr><td>Rate settings</td><td>Price of one minute, daily free minutes, carryover cap, Zone 2 heart rate threshold</td><td>On-device settings</td></tr>
+  <tr><td>Rate settings</td><td>Price of one minute, daily free minutes, carryover cap, Zone 2 heart rate threshold, streak threshold</td><td>On-device settings</td></tr>
+  <tr><td>Walk sessions</td><td>When you started “Walk just 5 minutes,” and the day’s brisk steps</td><td>On-device settings</td></tr>
+  <tr><td>Watch complications</td><td>Time left, today’s step count, streak, record cells, and purchase status — a copy your iPhone sends to its paired Apple Watch</td><td>App group storage on Apple Watch</td></tr>
   <tr><td>Weekly Nag</td><td>The single most recent generated sentence</td><td>On-device settings</td></tr>
 </table>
 </div>
@@ -107,7 +111,8 @@
   <tr><td>Apple Watch</td><td>Heart rate, step count, active energy</td><td>Workouts (indoor walking)</td><td>Zone 2 bonus during a session, filling your Activity rings</td></tr>
 </table>
 </div>
-<p>Health data <strong>never leaves your device.</strong> Balpum does not use health data for advertising or marketing, and never sells or shares it with anyone.</p>
+<p>Without an Apple Watch, “Walk just 5 minutes” uses your iPhone’s <strong>Motion &amp; Fitness</strong> (pedometer) data to count your steps and pace. It’s used only to add the brisk-walk bonus for time spent walking faster than 100 steps a minute.</p>
+<p>Health and motion data <strong>never leave your device.</strong> Balpum does not use this data for advertising or marketing, and never sells or shares it with anyone.</p>
 <p>You can withdraw access at any time in iOS <em>Settings &rsaquo; Privacy &amp; Security &rsaquo; Health</em>. Withdrawing stops step earning, but existing records remain.</p>
 
 <h2>3. Screen Time data</h2>
@@ -117,6 +122,7 @@
 <ul>
   <li><strong>Time spent in the apps you picked</strong> — a total in minutes</li>
   <li><strong>How many times you bypassed the lock screen</strong> — the action shown as &ldquo;Open anyway&rdquo; in the app</li>
+  <li><strong>What you chose on a locked app, and when</strong> — the date and time (to the minute) you tapped &ldquo;I&rsquo;ll go walk&rdquo; or &ldquo;Open anyway.&rdquo; &ldquo;When locked&rdquo; in Balpum Pro groups these by time of day</li>
 </ul>
 
 <h3>What cannot be recorded</h3>
@@ -134,34 +140,43 @@
   <tr><th>Permission</th><th>Requested by</th><th>If you decline</th></tr>
   <tr><td>Health</td><td>iPhone, Apple Watch</td><td>Step earning and the Zone 2 bonus will not work</td></tr>
   <tr><td>Screen Time</td><td>iPhone</td><td>Only the lock will not work; earning continues as usual</td></tr>
-  <tr><td>Motion &amp; Fitness</td><td>Apple Watch</td><td>Live step haptics during a session will not work</td></tr>
+  <tr><td>Notifications</td><td>iPhone</td><td>Only the weekly nag notification stops. Balpum asks only when you turn on the weekly nag notification in Settings, and the notification is scheduled on your device</td></tr>
+  <tr><td>Motion &amp; Fitness</td><td>iPhone, Apple Watch</td><td>iPhone: only the brisk-walk bonus in “Walk just 5 minutes” stops working; step earning continues. Apple Watch: live step haptics during a session will not work</td></tr>
 </table>
 </div>
-<p>Balpum <strong>does not request notification, location, contacts, camera, photo, or microphone access.</strong></p>
+<p>Balpum <strong>does not request location, contacts, camera, photo, or microphone access.</strong></p>
 
-<h2>6. Sharing with third parties and international transfers</h2>
-<p><strong>None.</strong> Balpum does not provide any information to third parties and does not transfer it across borders. The app contains no feature that communicates with the outside world.</p>
+<h2>6. Paid feature purchases</h2>
+<p>Balpum Pro is a paid upgrade sold as an App Store in-app purchase. It includes Year Record, Home Screen grass widgets, Apple Watch complications, monthly and yearly share cards, and &ldquo;When locked.&rdquo; Apple handles the payment and your payment details; they are not passed to Balpum or the developer.</p>
+<ul>
+  <li><strong>What Balpum checks</strong> — whether the Apple Account on this device has bought Balpum Pro. It checks Apple-signed transaction records on your device and stores only the result (yes/no) on the device. People who used Balpum before 1.2 get Balpum Pro as a gift; to tell, Balpum checks on your device only which version you first downloaded, from Apple-signed app transaction records.</li>
+  <li><strong>What the developer can see</strong> — only the sales totals Apple provides (such as units sold by country). The developer cannot tell who bought it.</li>
+  <li><strong>Communication</strong> — the app talks to the App Store to load the price and to confirm purchases and restores. This is governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
+</ul>
 
-<h2>7. Analytics and advertising</h2>
+<h2>7. Sharing with third parties and international transfers</h2>
+<p><strong>None.</strong> Balpum does not provide any information to third parties and does not transfer it across borders. Apart from talking to the App Store to check Balpum Pro purchases, which Apple handles, the app has no feature that communicates with the outside world.</p>
+
+<h2>8. Analytics and advertising</h2>
 <p>Balpum includes no usage analytics tool, no crash-reporting tool, and no advertising SDK. It does not read the advertising identifier.</p>
 
-<h2>8. Retention and deletion</h2>
+<h2>9. Retention and deletion</h2>
 <ul>
   <li><strong>On-device information</strong> — kept until you delete it. <strong>Deleting the app deletes it too.</strong></li>
   <li><strong>Workouts saved to the Health app</strong> — remain in the Health app. They are not removed when you delete Balpum; you can delete them directly in the Health app.</li>
   <li><strong>Server storage</strong> — there is no server, so nothing is stored.</li>
 </ul>
 
-<h2>9. Your rights</h2>
+<h2>10. Your rights</h2>
 <p>Information on your device disappears when you remove the app. You can withdraw Health and Screen Time access at any time in iOS Settings.</p>
 <div class="note">Because Balpum collects nothing that identifies you and keeps nothing on a server, there is nothing you would need to ask us to access, correct, or delete. Everything is on your device, under your direct control.</div>
 
-<h2>10. Children's privacy</h2>
+<h2>11. Children's privacy</h2>
 <p>Balpum is intended for users <strong>aged 13 and over</strong>.</p>
 <p>Under the Personal Information Protection Act of the Republic of Korea, processing personal information of a child <strong>under 14</strong> requires consent from a legal guardian. Users under 14 should use the app only with a guardian's consent.</p>
 <div class="note">Balpum has no separate age-verification step and does not knowingly collect personal information from children under 14. Since everything is stored only on the device, a guardian can erase all of it by deleting the app from that device.</div>
 
-<h2>11. Contact</h2>
+<h2>12. Contact</h2>
 <div class="scroll">
 <table>
   <tr><th>Business name</th><td>Fount Lab</td></tr>
@@ -173,7 +188,7 @@
 </div>
 <p>For privacy complaints in Korea, you may also contact the Personal Information Infringement Report Center (privacy.kisa.or.kr, 118) or the Personal Information Dispute Mediation Committee (kopico.go.kr, 1833-6972).</p>
 
-<h2>12. Changes to this policy</h2>
+<h2>13. Changes to this policy</h2>
 <p>If this policy changes, we will let you know through the app or the App Store listing.</p>
 <p>This English version is provided for convenience. If it differs from the <a href="../" hreflang="ko">Korean version</a>, the Korean version prevails.</p>
 
