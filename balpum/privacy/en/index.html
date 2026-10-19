@@ -77,7 +77,7 @@
     <span class="brand-name">Balpum</span>
   </div>
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective <!--EFFECTIVE_DATE-->September 13, 2026<!--/EFFECTIVE_DATE--> · Last updated September 13, 2026</p>
+  <p class="meta">Effective <!--EFFECTIVE_DATE-->September 13, 2026<!--/EFFECTIVE_DATE--> · Last updated October 19, 2026</p>
 </header>
 
 <div class="lead">
@@ -90,7 +90,7 @@
 <div class="scroll">
 <table>
   <tr><th>Type</th><th>What it contains</th><th>Where it lives</th></tr>
-  <tr><td>Daily records</td><td>Date, step count, minutes earned, Watch session and brisk-walk bonuses, number of times the lock was bypassed</td><td>On-device database (the copy widgets draw from is in app group storage)</td></tr>
+  <tr><td>Daily records</td><td>Date, step count, minutes earned, Watch session and brisk-walk bonuses, number of times the lock was bypassed, times you tapped &ldquo;I&rsquo;ll go walk&rdquo; or &ldquo;Open anyway&rdquo; on a locked app</td><td>On-device database (the copy widgets draw from is in app group storage)</td></tr>
   <tr><td>Start date</td><td>The day you first opened the app, used to compare steps before and after Balpum and to count your streak</td><td>App group storage</td></tr>
   <tr><td>Purchase status</td><td>Whether you bought Balpum Pro (yes/no)</td><td>App group storage</td></tr>
   <tr><td>Lock settings</td><td>Whether the lock is on, the set of apps you picked (opaque tokens), automatic deduction totals</td><td>App group storage</td></tr>
@@ -122,6 +122,7 @@
 <ul>
   <li><strong>Time spent in the apps you picked</strong> — a total in minutes</li>
   <li><strong>How many times you bypassed the lock screen</strong> — the action shown as &ldquo;Open anyway&rdquo; in the app</li>
+  <li><strong>What you chose on a locked app, and when</strong> — the date and time (to the minute) you tapped &ldquo;I&rsquo;ll go walk&rdquo; or &ldquo;Open anyway.&rdquo; &ldquo;When locked&rdquo; in Balpum Pro groups these by time of day</li>
 </ul>
 
 <h3>What cannot be recorded</h3>
@@ -139,15 +140,16 @@
   <tr><th>Permission</th><th>Requested by</th><th>If you decline</th></tr>
   <tr><td>Health</td><td>iPhone, Apple Watch</td><td>Step earning and the Zone 2 bonus will not work</td></tr>
   <tr><td>Screen Time</td><td>iPhone</td><td>Only the lock will not work; earning continues as usual</td></tr>
+  <tr><td>Notifications</td><td>iPhone</td><td>Only the weekly nag notification stops. Balpum asks only when you turn on the weekly nag notification in Settings, and the notification is scheduled on your device</td></tr>
   <tr><td>Motion &amp; Fitness</td><td>iPhone, Apple Watch</td><td>iPhone: only the brisk-walk bonus in “Walk just 5 minutes” stops working; step earning continues. Apple Watch: live step haptics during a session will not work</td></tr>
 </table>
 </div>
-<p>Balpum <strong>does not request notification, location, contacts, camera, photo, or microphone access.</strong></p>
+<p>Balpum <strong>does not request location, contacts, camera, photo, or microphone access.</strong></p>
 
 <h2>6. Paid feature purchases</h2>
-<p>Balpum Pro is a paid upgrade sold as an App Store in-app purchase. It includes Year Record, Home Screen grass widgets, and monthly and yearly share cards. Apple handles the payment and your payment details; they are not passed to Balpum or the developer.</p>
+<p>Balpum Pro is a paid upgrade sold as an App Store in-app purchase. It includes Year Record, Home Screen grass widgets, Apple Watch complications, monthly and yearly share cards, and &ldquo;When locked.&rdquo; Apple handles the payment and your payment details; they are not passed to Balpum or the developer.</p>
 <ul>
-  <li><strong>What Balpum checks</strong> — whether the Apple Account on this device has bought Balpum Pro. It checks Apple-signed transaction records on your device and stores only the result (yes/no) on the device.</li>
+  <li><strong>What Balpum checks</strong> — whether the Apple Account on this device has bought Balpum Pro. It checks Apple-signed transaction records on your device and stores only the result (yes/no) on the device. People who used Balpum before 1.2 get Balpum Pro as a gift; to tell, Balpum checks on your device only which version you first downloaded, from Apple-signed app transaction records.</li>
   <li><strong>What the developer can see</strong> — only the sales totals Apple provides (such as units sold by country). The developer cannot tell who bought it.</li>
   <li><strong>Communication</strong> — the app talks to the App Store to load the price and to confirm purchases and restores. This is governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
 </ul>
